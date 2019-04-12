@@ -1,1 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
+$accent-yellow: #FCC529;
+$dark: #1C1D21;
+$light: #F5EDE2;
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu');
+
+body {
+  margin: 0;
+  background-color: $light;
+  font-family: 'Open Sans', sans-serif;
+  color: $dark;
+}
+
+app-root {
+  height: 100vh;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; // flex-direction
+  align-items: center; // perpendicular to flex-directon
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav, footer { 
+  padding: 1em;
+  background-color: $accent-yellow;
+  fa-icon {
+    color: $dark;
+  }
+}
+
+footer {
+  height: 10vh;
+  justify-content: flex-end;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+  }
+}
